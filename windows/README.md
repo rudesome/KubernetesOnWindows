@@ -18,3 +18,12 @@ KUBELET_KUBEADM_ARGS="--container-runtime=remote --container-runtime-endpoint=np
 ```
 
 reboot the windows node if it is still in a "not ready" state
+
+
+Prerequisites Windows:
+
+- `bcdedit /set hypervisorlaunchtype off`
+- WSL disabled
+- bios hyper threading enabled
+- Virtualize Intel VT-x/EPT or AMD-V/RVI enabled (VMware Workstation)
+
